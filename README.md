@@ -13,7 +13,7 @@ Setup
 ```
 sudo zerotier-cli join ##########
 ```
-- In your Zerotier web console, authorize each device by checking the "Auth?" box next to each device. You may also want to create device descritions to make things easier to manage.
+- In your Zerotier web console, authorize each device by checking the "Auth?" box next to each device. You may also want to create device descriptions to make things easier to manage.
 - Ensure that you can ssh into your Linux host through its Zerotier "Managed IP". You should now be able to manage the device remotely and make ad-hoc configuration changes if need be.
 - Make sure the Linux box has iptables installed.
 - Make sure IP Forwarding is allowed on the Linux box:
