@@ -31,7 +31,7 @@ Accessing the Remote LAN
 - This example makes the following assumptions:
     - Remote LAN is using the CIDR range 10.100.0.0/16
     - Remote DNS server is 10.100.53.53
-    - Local LAN is using some other range (162.198.1.0/24)
+    - Local LAN is using some other range (192.168.1.0/24)
     - Zerotier issues Managed IPs in the CIDR range 172.23.0.0/16
     - The Linux box eth0 interface is connected to the remote LAN and has the address 10.100.0.5
     - The Linux box has a Zerotier interface named ztabcd1234 and has the address 172.23.0.2
