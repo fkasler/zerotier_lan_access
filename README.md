@@ -59,6 +59,25 @@ cat /etc/resolv.conf
 ```
 - You can now manually add the remote DNS server (and search domain) as your primary DNS on your localhost. This will allow you to have full access to the remote LAN as if you were directly plugged in.
 
+Teardown
+======
+
+- You may want to restore things once you're done accessing the remote LAN
+- Delete your manual DNS entries on your local host either through the GUI or by editing /etc/resolv.conf
+- Remove your local routes that are pointing to your Linux box Zerotier IP:
+```
+sudo route -n delete 10.100.0.0/16
+```
+- Remove routes in the Zerotier web GUI
+- Flush iptables on the Linux box:
+```
+sudo iptables -F
+```
+- Leave the Zerotier network:
+```
+sudo zerotier-cli leave ##########
+```
+
 Credits
 ======
 [hKemmler](https://www.reddit.com/user/hKemmler/) on Reddit:
