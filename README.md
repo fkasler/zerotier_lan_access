@@ -72,6 +72,7 @@ sudo route -n delete 10.100.0.0/16
 - Flush iptables on the Linux box:
 ```
 sudo iptables -F
+sudo iptables -t nat -D POSTROUTING 1
 ```
 - Leave the Zerotier network:
 ```
