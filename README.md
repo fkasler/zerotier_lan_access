@@ -1,7 +1,7 @@
 Purpose
 ======
 
-This is a collection of commands that allows you to connect a device to a remote LAN over Zerotier.
+This is a collection of commands that allows you to connect a device to a remote LAN over Zerotier. This gives your local host full access to the remote LAN as if it were physically pluggged in. The only major limitation is binding ports as a server which would take additional iptables rules.
 
 Setup
 ======
